@@ -11,7 +11,7 @@ redirect_from:
 
 你可以在这里找到我的简历：杨智童的简历[](../assets/Curriculum_Vitae.pdf)。
 
-[Email](202120751231@bua.edu.cn) / [Github](https://github.com/yztsw1) / [Wechat](../images/wechat.jpg) / 
+[Email](202120751231@bua.edu.cn) / [Github](https://github.com/yztsw1) / [Wechat](../images/WeCat.jpg) / 
 
 A data-driven personal website
 ======
