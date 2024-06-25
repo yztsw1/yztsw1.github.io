@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-我是一名来自北京农学院的四年级本科生，我的专业是智能科学与大数据技术。我的研究兴趣包括计算机视觉、计算机图形学、机器学习和计算摄影。
+我是一名来自北京农学院[School of BUA](https://www.bua.edu.cn/),的四年级本科生，我的专业是智能科学与大数据技术。我的研究兴趣包括计算机视觉、计算机图形学、机器学习和计算摄影。
 
-你可以在这里找到我的简历：杨智童的简历[]。
+你可以在这里找到我的简历：杨智童的简历[](../assets/Curriculum_Vitae.pdf)。
 
 [Email](202120751231@bua.edu.cn) / [Github](https://github.com/yztsw1) / [Wechat](../images/wechat.jpg) / 
 
