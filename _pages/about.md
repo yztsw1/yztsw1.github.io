@@ -13,41 +13,35 @@ redirect_from:
 
 [Email](202120751231@bua.edu.cn) / [Github](https://github.com/yztsw1) / [Wechat](../images/WeCat.jpg) / 
 
-A data-driven personal website
+一个数据驱动的个人网站
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+与许多其他基于Jekyll的GitHub页面模板一样，Academic Pages使您可以将网站的内容与其形式分离。您网站的内容和元数据位于结构化markdown文件中，而其他各种文件构成了主题，指定了如何将这些内容转换为HTML页面。您将这些各种markdown（.md）、YAML（.yml）、HTML和CSS文件保存在一个公共GitHub仓库中。每次您提交并将更新推送到仓库时，GitHub Pages服务都会根据这些文件创建静态HTML页面，这些页面托管在GitHub的服务器上，免费提供。
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+通过这种方式，可以实现动态内容管理系统（如Wordpress）的许多功能，使用的计算资源仅为后者的几分之一，且对黑客攻击和DDoS攻击的脆弱性要小得多。您还可以随心所欲地修改主题，而不必触及网站内容。如果您在Jekyll/HTML/CSS中破坏了某些内容且无法修复，您描述演讲、出版物等的markdown文件是安全的。您可以回滚更改，甚至删除仓库并重新开始——只要确保保存markdown文件！最后，您还可以编写脚本处理网站上的结构化数据，例如，这个脚本分析关于演讲的页面元数据，以显示您每次演讲的位置地图。
 
-Getting started
+开始使用
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+如果您还没有GitHub帐户，请注册一个并确认您的电子邮件（必需！）
+点击右上角的“fork”按钮，复制这个仓库。
+进入仓库的设置（从“Code”开始的标签中最后一个项目，应在“Unwatch”下方）。将仓库重命名为"[your GitHub username].github.io"，这也将是您网站的URL。
+设置全站配置并创建内容和元数据（见下文——还可以查看这一系列差异，显示了为用户"getorg-testacct"设置示例站点时更改了哪些文件）
+将任何文件（如PDF、.zip文件等）上传到files/目录。它们将出现在https://[your GitHub username].github.io/files/example.pdf。
+通过进入仓库设置，在“GitHub pages”部分检查状态
 
-Site-wide configuration
+全站配置
 ------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+网站的主要配置文件位于基本目录中的_config.yml，该文件定义了侧边栏和其他全站功能的内容。您需要将默认变量替换为关于您自己和您的网站GitHub仓库的变量。顶部菜单的配置文件位于_data/navigation.yml。例如，如果您没有作品集或博客文章，您可以删除navigation.yml文件中的这些项目，以从标题中移除它们。
 
-Create content & metadata
+创建内容和元数据
 ------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+对于网站内容，每种类型的内容都有一个markdown文件，这些文件存储在诸如_publications、_talks、_posts、_teaching或_pages的目录中。例如，每次演讲都是一个存储在_talks目录中的markdown文件。在每个markdown文件的顶部是关于演讲的结构化数据，YAML格式，主题将解析这些数据以实现许多很酷的功能。关于演讲的相同结构化数据用于生成Talks页面上的演讲列表，每个特定演讲的单独页面，CV页面的演讲部分，以及您演讲过的地方的地图（如果您运行这个python文件或Jupyter笔记本，它根据_talks目录的内容创建地图的HTML）。
 
-**Markdown generator**
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+**Markdown生成器**
 
-How to edit your site's GitHub repository
+我还创建了一组Jupyter笔记本，它们将包含有关演讲或演示的结构化数据的CSV转换为个别markdown文件，这些文件将针对Academic Pages模板进行适当格式化。该目录中的示例CSV是我用来创建自己的个人网站stuartgeiger.com的。我通常的工作流程是，我保持一个关于我的出版物和演讲的电子表格，然后运行这些笔记本中的代码以生成markdown文件，然后提交并将它们推送到GitHub仓库。
+
+如何编辑您网站的GitHub仓库
 ------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+许多人使用git客户端在本地计算机上创建文件，然后将它们推送到GitHub的服务
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
