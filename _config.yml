@@ -24,11 +24,11 @@ author:
   avatar           : "zipai.png"
   name             : "杨智童"
   pronouns         : "her"  
-  bio              : "我的人生格言是：“人生没有彩排，每一天都是现场直播。”因此，我珍惜每一天，努力让生活充满阳光与正能量。我相信，只要我们心怀梦想，勇往直前，就一定能够实现自己的人生价值。"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "我的人生格言是：“人生没有彩排，每一天都是现场直播"
+  location         : "北京-昌平"
+  employer         : "BUA University"
   uri              :  https://yztsw1.github.io/
-  email            : "none@example.org" 
+  email            : "202120751231@bua.edu.cn" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
